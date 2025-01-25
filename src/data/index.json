@@ -1,0 +1,98 @@
+{   "portfolio": [
+      {
+        "id": "1",
+        "src": "./assets/placeholder.png",
+        "title": "PantryPal",
+        "description": "Web-App that tracks pantry items via manual input or image recognition. Generates recipe recommendations based on available ingredients and user preferences. Awarded the Apollo award, second highest level of achievement.",
+        "link": "https://youtu.be/ta7awfIvrYw",
+        "techStack": [
+          { "name": "React", "icon": "./assets/icons/react.png"  },
+          { "name": "JavaScript", "icon": "./assets/icons/javascript.png" },
+          { "name": "HTML", "icon": "./assets/icons/html.png" },
+          { "name": "CSS", "icon": "./assets/icons/CSS.png" },
+          { "name": "Firebase", "icon": "./assets/icons/firebase.png" },
+          { "name": "Node.js", "icon": "./assets/icons/node.png" },
+          { "name": "TensorFlow", "icon": "./assets/icons/tf.png" }]
+     }
+      ,
+      {
+        "id": "2",
+        "src": "./assets/placeholder-image-2.png",
+        "title": "MovieRec",
+        "description": "Conducted a comparative analysis of various contextual bandit algorithms to identify the most effective strategy on the movie dataset. Evaluated the algorithms using offline evaluation and bootstrapping to artificially increase sample size.",
+        "link": "https://colab.research.google.com/drive/1-m1Cx01J9KgP_xQFIRsmTDy4pvENannV?usp=sharing",
+        "techStack": [
+          { "name": "Python", "icon": "./assets/icons/python.png"  },
+          { "name": "pandas", "icon": "./assets/icons/pandas.png" },
+          { "name": "seaborn", "icon": "./assets/icons/seaborn.png" },
+          { "name": "scikit-learn", "icon": "./assets/icons/sci.png" }]
+      },
+      {
+        "id": "3",
+        "src": "./assets/placeholder-image-1.png",
+        "title": "Beijing Market",
+        "description": "Generated data visualisations to conclude if one should enter the Beijing Property Market. Created complex geospatial visualizations (choropleth maps) and demand-supply heatmaps to uncover market trends and regional disparities.",
+        "link": "https://docs.google.com/presentation/d/1YBvTu-CG_WKFdHsZ3Y1XMndosiSgvQIgL1eUWv69vR0/edit?usp=sharing",
+        "techStack": [
+          { "name": "Python", "icon": "./assets/icons/python.png" },
+          { "name": "pandas", "icon": "./assets/icons/pandas.png" },
+          { "name": "SQL", "icon": "./assets/icons/sql.png"  },
+          { "name": "Tableau", "icon": "./assets/icons/tab.png" }]
+      }
+    ],
+    "contact": [
+      {
+        "id": "1",
+        "src": "./assets/linkedin.png",
+        "description": "www.linkedin.com/in/sook-mun-yong/",
+        "link": "https://www.linkedin.com/in/sook-mun-yong/"
+      },
+      {
+        "id": "2",
+        "src": "./assets/mail.png",
+        "description": "yongsm1223@gmail.com",
+        "link": "mailto:yongsm1223@gmail.com"
+      }
+    ],
+
+    "timeline": [
+      {
+        "id": "1",
+        "title": "Python Teaching Assistant",
+        "icon": "./assets/TA.png",
+        "place": "NUS Computing",
+        "date": "Dec 2024 - Present",
+        "description": [
+          { "point": "Taught weekly 3 hour tutorials on Python programming to a class of 20 students." },
+          { "point": "Graded and gave feedback on their work." },
+          { "point": "Maintained a positive learning environment and close relationships with my students." }
+         ]
+      },
+      {
+        "id": "2",
+        "title": "Year 2 Computing Student",
+        "place": "National University of Singapore",
+        "icon": "./assets/nus.png",
+        "date": "Aug 2023 - Present",
+        "description": [
+          { "point": "Current GPA: 4.71" },
+          { "point": "RAG committee 2024, achieved Computing's best performance." },
+          { "point": "Dance Captain of NUS Dance Synergy." },
+          { "point": "Key Modules: BT1101 Business Analytics, CS2030 'OOP', BT2102 Data Visualisation, BT4014 Analytics Driven Design of Adaptive Systems." }
+         ]
+      },
+
+      {
+        "id": "3",
+        "title": "HCI Graduate",
+        "place": "Hwa Chong Instituition",
+        "icon": "./assets/hci.png",
+        "date": "Feb 2021 - Oct 2022",
+        "description": [
+          { "point": "Hwa Chong Diploma with Distinction." },
+          { "point": "3rd Place at Sustainable Design Hackathon." },
+          { "point": "HCInteract Club Comms IC for a student-led project on mental wellness." }
+         ]
+      }
+    ]
+  }
