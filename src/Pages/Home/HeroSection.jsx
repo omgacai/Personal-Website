@@ -54,7 +54,7 @@ export default function HeroSection() {
                     </button>
             </div>
             <div className="hero-img">
-                <img src="/assets/hero-img.JPG" alt="Hero Section"  />
+                <img src="/assets/hero-img.jpg" alt="Hero Section"  />
 
             </div>
 
