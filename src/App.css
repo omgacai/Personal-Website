@@ -141,26 +141,17 @@ p {
 }
 
 
-/* Hero */
 
+/* Hero */
+/* Base styles */
 .hero-section {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  padding: 2rem;
-  padding: 133.333px 150px ;
+  padding: 133.333px 150px;
   gap: 16px;
-  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-
-@media screen and (max-width: 768px) {
-  .hero-section {
-    grid-template-columns: 1fr; /* Stack items in a single column */
-  }
-}
-
 
 .hero-section-box {
   display: flex;
@@ -168,26 +159,24 @@ p {
   justify-content: center; /* Centers the text inside the box */
 }
 
-
 .hero-section-content {
   flex: 1;
 }
 
-.hero-desc-all {
+.hero-desc-all, .title {
   opacity: 0; /* Initial state */
   transition: opacity 2s ease-in-out;
-  animation: fadeIn 1s ease-in-out 4.5s forwards; /* Start after 5 seconds */
+  animation: fadeIn 1s ease-in-out 0s forwards;
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
-
 
 .hero-img {
   flex: 1;
@@ -199,25 +188,32 @@ p {
   border-radius: 30px; /* Rounds the corners */
   width: 350px;
   height: auto;
-  opacity: 0; /* Initially hidden */
+  opacity: 1; /* Initially hidden */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  animation: moveInFromRight 1s ease-in-out forwards;
+  animation: moveInFromRight 1s ease-in-out;
 }
 
 @keyframes moveInFromRight {
   from {
-      opacity: 0; /* Initially hidden */
-      transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); /* Start off-screen to the right */
   }
   to {
-      opacity: 1; /* Make it visible */
-      transform: translateX(0); /* Move to its original position */
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to its original position */
   }
 }
 
-
 .hero-img img:hover {
-  transform: scale(1.10); /* Expands the image by 10% on hover */
+  transform: scale(1.05); /* Expands the image by 10% on hover */
+}
+
+.btn-primary {
+  opacity: 0; /* Initial state to make it invisible */
+  position: relative; /* To allow for positioning */
+  left: -100%; /* Start off-screen to the left */
+  transition: opacity 0.5s ease-in-out;
+  animation: moveInFromLeft 0.5s ease-in-out 2s forwards, expandAndShrink 1s ease-in-out 2.5s forwards; /* Two animations with delays */
 }
 
 .btn.btn-primary img {
@@ -229,33 +225,62 @@ p {
   transform: translateY(5px); /* Shifts the icon down by 5px */
 }
 
-.btn-primary {
-  opacity: 0; /* Initial state to make it invisible */
-  position: relative; /* To allow for positioning */
-  left: -100%; /* Start off-screen to the left */
-  transition: opacity 0.5s ease-in-out;
-  animation: moveInFromLeft 0.5s ease-in-out 6s forwards, expandAndShrink 1s ease-in-out 6.5s forwards; /* Two animations with delays */
-}
-
 @keyframes moveInFromLeft {
   to {
-      opacity: 1; /* Make it visible */
-      left: 0; /* Move to its original position */
+    opacity: 1; /* Make it visible */
+    left: 0; /* Move to its original position */
   }
 }
 
 @keyframes expandAndShrink {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(1.05); /* Expand */
+    transform: scale(1.05); /* Expand */
   }
   100% {
-      transform: scale(1); /* Return to original size */
+    transform: scale(1); /* Return to original size */
   }
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 1400px) {
+  .hero-section {
+    padding: 2rem 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .hero-img img {
+    width: 80%; /* Adjust the width percentage */
+    max-width: 300px; /* Set a maximum width */
+    min-width: 250px; /* Set a minimum width */
+  }
+
+  .hero-section-box {
+    align-items: center;
+    padding: 1rem; /* Adjust padding for better spacing */
+  }
+
+  .btn-primary {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 0.375rem 0.75rem; /* Adjust padding for smaller screens */
+  }
+
+  .hero-bza{
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
+  }
+
+  .hero.data {
+    font-size: 0.6rem;
+  }
+
+  .hero-section-title {
+    font-size: 4rem;
+  }
+}
+
+
+/* Hero styler ends */
 
 /* Navbar Style Start */
 .navbar {
@@ -316,7 +341,7 @@ p {
 }
 
 .about-img.in-view {
-  animation: tilt 1s ease-in-out 2; /* Trigger tilt animation when in-view class is added */
+  animation: tilt 1s ease-in-out 2s 2; /* Trigger tilt animation when in-view class is added */
 }
 
 .about--section {
@@ -341,14 +366,6 @@ p {
 
 
 }
-
-@media screen and (max-width: 768px) {
-  .about--content {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Centers image and text */
-  }
-}
-
 .about-img {
   flex: 1;
   display: flex;
@@ -379,8 +396,6 @@ p {
       transform: rotate(0deg);
   }
 }
-
-
 
 
 .tilting-image {
@@ -418,18 +433,40 @@ p {
 }
 
 
+/* Media query for smaller screens */
+@media screen and (max-width: 1400px) {
+  .about--section {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .about--content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items at the top */
+    padding: 1rem 0; /* Reduce padding on smaller screens */
+  }
+
+  .about-img {
+    align-self: center; /* Ensure image starts at the top */
+    justify-content: center;
+    display: flex;
+  }
+
+  .about-img img {
+    width: 350px; /* Fixed width */
+  }
+}
+
 /* About Styler Ends */
 
 
 /* portfolio*/
+/* Base styles */
 .portfolio--section.in-view {
   opacity: 1; /* Final state: visible */
   transform: translateY(0); /* Final state: in position */
 }
 
-
 .portfolio--section {
-  padding: 2rem;
   padding: 0px 150px 150px;
   gap: 10px;
   align-items: center;
@@ -448,9 +485,8 @@ p {
   align-items: stretch;
 }
 
-
 .portfolio--section--card--content {
-  margin-top: 0;  /* Remove extra space above the title */
+  margin-top: 0; /* Remove extra space above the title */
   padding-top: 0px; /* Slight padding for breathing space */
 }
 
@@ -466,20 +502,18 @@ p {
 .portfolio--section--img {
   border-radius: 20px;
   width: 100%;
-  align-items: center;
-  display: center;
+  display: flex;
   justify-content: center;
-  margin:0;
-  padding: 13.5px 13.5px 0 13.5px;
-
+  align-items: center;
+  margin: 0;
+  padding-top: 10px;
   overflow: hidden;
   height: 250px;
-  
 }
 
 .portfolio--section--img > img {
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: 100%;
   border-radius: 20px;
   object-fit: cover; /* Ensures the image covers the container without distortion */
 }
@@ -490,7 +524,7 @@ p {
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
-  flex: 1 0 0;
+ 
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   border-top-left-radius: 20px;
@@ -498,76 +532,107 @@ p {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
   height: 100%; /* Let all cards grow equally */
   min-height: 680px; /* Set a minimum consistent height */
-  box-sizing: border-box; 
-}
-  
-  .portfolio--section--card--content {
-    display: flex;
-    padding: 0px 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0px;
-    align-self: stretch;
-    margin: 0;
-    flex-grow: 1;
-  }
-
-
-  .portfolio--section--text {
-    flex-grow: 1;
-  }
-
-  .portfolio--section--content {
-    flex-grow: 1; /* Allow content to expand and take available space */
-  }
-
-  
-  .portfolio--section--card:hover {
-    transform: scale(1.03); /* Slightly enlarge the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
-    cursor: pointer; /* Optional: Show pointer cursor on hover */
-    background: rgba(247, 212, 225, 0.5);
-
-  }
-
-  .portfolio--section--card:hover .portfolio--section--button .button-icon {
-    transform: translateY(-4px) translateX(3px); /* Move the icon slightly */
-    transition: transform 0.3s ease-in-out;
-    color: grey;
+  box-sizing: border-box;
+  width: 400px;
 }
 
+.portfolio--section--card--content {
+  display: flex;
+  padding: 0px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+  align-self: stretch;
+  margin: 0;
+  flex-grow: 1;
+}
 
-  .portfolio--section--button {
-    background-color: var(--secondary); 
-    color: black;
-    border: none;
-    border-bottom: 1px solid var(--black);
-    padding: 0px 5px;
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.portfolio--section--text {
+  flex-grow: 1;
+}
+
+.portfolio--section--content {
+  flex-grow: 1; /* Allow content to expand and take available space */
+}
+
+.portfolio--section--card:hover {
+  transform: scale(1.03); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+  cursor: pointer; /* Optional: Show pointer cursor on hover */
+  background: rgba(247, 212, 225, 0.5);
+}
+
+.portfolio--section--card:hover .portfolio--section--button .button-icon {
+  transform: translateY(-4px) translateX(3px); /* Move the icon slightly */
+  transition: transform 0.3s ease-in-out;
+  color: grey;
+}
+
+.portfolio--section--button {
+  background-color: var(--secondary); 
+  color: black;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  padding: 0px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.portfolio--section--button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.portfolio--section--button:hover {
+  transform: scale(1.05);
+  color: grey;
+}
+
+.portfolio--section--button:active {
+  transform: scale(0.98);
+}
+
+.button-icon {
+  margin-left: 8px; /* Adjusts space between text and icon */
+  transition: transform 0.3s ease, d 0.3s ease;
+}
+
+@media screen and (max-width: 1168px) {
+  .portfolio--section {
+    padding: 1rem;
+  }
+
+  .portfolio--section--container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 0.5rem; /* Reduce padding on the sides */
+  }
+
+  .portfolio--section--card {
+    width: 400px; /* Ensure each card takes full width */
+    min-height: 680px; /* Maintain fixed height */
+    margin-bottom: 20px; /* Add space between stacked cards */
+  }
+
+  .portfolio--section--img {
+    height: 250px; /* Maintain fixed height for image container */
+  }
+
+  .portfolio--section--img > img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Keep image height within the container */
+    max-height: 250px; /* Ensure image doesn't exceed container height */
   }
 
   .portfolio--section--button-container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+    justify-content: center; /* Center the button on smaller screens */
   }
-  
-  .portfolio--section--button:hover {
-    transform: scale(1.05);
-    color: grey;
-  }
-  
-  .portfolio--section--button:active {
-    transform: scale(0.98);
-  }
-  .button-icon {
-    margin-left: 8px; /* Adjusts space between text and icon */
-    transition: transform 0.3s ease, d 0.3s ease;
-  }
+}
+
 /*
   .portfolio--section--button:hover .button-icon {
     transform: translateY(-3px) translateX(2px); Shift icon to the right 
@@ -761,8 +826,8 @@ p {
   transition: ease-in-out 0.2s;
 }
 
-@media (max-width: 768px) {
-  .form-row {
+@media (max-width: 1168px) {
+  .contact-container {
       flex-direction: column;
   }
 }
@@ -808,6 +873,14 @@ p {
       transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 1168px) {
+
+  .contact--section {
+    padding: 1em;
+  }
+}
+
 
 
 /* contact styler ends */
@@ -878,12 +951,16 @@ p {
 
 
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1168px) {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
     color: rgb(44, 44, 44);
     margin-top: 1.5em;
+  }
+
+  .experience--section {
+    padding: 1em;
   }
 }
 
@@ -896,5 +973,4 @@ p {
 .vertical-timeline-element-date {
   margin-top: 0px;  /* Adjust this value as needed */
 }
-
 

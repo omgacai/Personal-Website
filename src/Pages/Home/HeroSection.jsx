@@ -2,25 +2,13 @@ import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
 import { useState, useEffect } from "react";
 export default function HeroSection() {
 
-    const [showCursor, setShowCursor] = useState(true);
-
-    const [text] = useTypewriter({
-        words:["Hello1", "Hello! My name is"],
-        loop:1,
-        onLoopDone: () => {
-            setShowCursor(false);
-        },
-        delaySpeed:70,
-        typingSpeed:200,
-        deleteSpeed:60
-
-    })
+    
 
     const [text1] = useTypewriter({
-        words: ["                             Sook Mun"],
+        words: ["           Sook Mun"],
         loop: 1,
         typingSpeed: 800,
-        delaySpeed: 60
+        delaySpeed: 0
     });
 
     return (
@@ -28,7 +16,7 @@ export default function HeroSection() {
             <div className="hero-section-box">
                 <div className="Hero-section-content">
                     <h4 className="title">
-                        <span>{text}{showCursor && <span style={{color:"#7a7a7a"}}><Cursor /></span>}</span>
+                        Hello! My name is
                     </h4>
              
                             <h1 className="hero-section-title">
@@ -38,10 +26,10 @@ export default function HeroSection() {
                             </span>
                             </h1>
                     <div className="hero-desc-all">
-                        <h2>
+                        <h2 className="hero-bza">
                             Business Analytics student at NUS
                         </h2>
-                        <h4 className="hero-desc">
+                        <h4 className="hero-data">
                             Aspiring Data Analyst | Scientist | Engineer 👩‍💻
                         </h4>
 
