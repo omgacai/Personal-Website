@@ -328,6 +328,13 @@ p {
   color: var(--black);
   font-weight:700;
 }
+
+@media screen and (max-width: 1168px) {
+  .navbar {
+    top: 0%
+  }
+}
+
 /* Navbar Styler Ends */
 
 /* About styles */
