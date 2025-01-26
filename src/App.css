@@ -190,7 +190,7 @@ p {
   height: auto;
   opacity: 1; /* Initially hidden */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  animation: moveInFromRight 1s ease-in-out;
+  animation: moveInFromRight 2.5s ease-in-out;
 }
 
 @keyframes moveInFromRight {
@@ -348,7 +348,7 @@ p {
 }
 
 .about-img.in-view {
-  animation: tilt 1s ease-in-out 2s 2; /* Trigger tilt animation when in-view class is added */
+  animation: tilt 1s ease-in-out 0.5s 2; /* Trigger tilt animation when in-view class is added */
 }
 
 .about--section {
@@ -727,6 +727,7 @@ p {
     display: flex;
     flex-direction: column;  /* Stack items vertically */
     gap: -100px;  /* Space between items */
+    white-space: normal;
   }
   
   .contact-item {
@@ -776,6 +777,12 @@ p {
     border: none;             /* Remove button border if needed */
     background: none;         /* Remove background if not required */
     cursor: pointer;          /* Show pointer cursor on hover */
+}
+.contact-img {
+  width: 350px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image is treated as a block element */
+  margin: -70px auto 0; /* Adjust the negative margin to shift it up */
 }
 
 /* contact form starts */

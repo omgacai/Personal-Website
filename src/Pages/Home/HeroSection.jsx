@@ -5,10 +5,11 @@ export default function HeroSection() {
     
 
     const [text1] = useTypewriter({
-        words: ["           Sook Mun"],
+        words: ["           Yong Sook Mun", "Sook Mun"],
         loop: 1,
-        typingSpeed: 800,
-        delaySpeed: 0
+        typingSpeed: 600,
+        delaySpeed: 20,
+        deleteSpeed: 100
     });
 
     return (

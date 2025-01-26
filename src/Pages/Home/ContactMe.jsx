@@ -91,6 +91,7 @@ export default function ContactMe() {
                             </a>
                         </div>
                     ))}
+                    <img className="contact-img" src="/assets/pusheen.gif"></img>
                 </div>
 
                 {/* Contact Form */}
