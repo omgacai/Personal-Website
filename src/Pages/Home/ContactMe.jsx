@@ -137,6 +137,12 @@ export default function ContactMe() {
                     </button>
                 </form>
             </div>
+
+            <div className="contact-footer">
+                <hr className="contact-footer-line"></hr>
+                <code className="contact-footer-text">Last updated: 27 Jan 2025</code>
+
+            </div>
         </section>
     );
 }
