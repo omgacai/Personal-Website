@@ -784,6 +784,7 @@ p {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensure the image is treated as a block element */
   margin: -70px auto 0; /* Adjust the negative margin to shift it up */
+  pointer-events: none;
 }
 
 /* contact form starts */
