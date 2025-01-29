@@ -67,7 +67,7 @@ export default function AboutMe() {
                         I am a Year 2 Business Analytics student from NUS specialising in Machine Learning. I enjoy all things data! The process of turning big data into meaningful insights brings me great sense of fulfilment! I look forward to further enhancing my skills and explore the endless possibilities of the world of data 🥳.
                     </p>
                     <p>
-                        When I'm not coding, I'm dancing! I currently teach Ballet 🩰 and am the Dance Captain of NUS Dance Synergy 💃🏻. My dedication and success in this art form is a testament to the sheer grit and determination I possess in pursuing my goals. And now, I aim to expand my knowledge and dedicate my time to data.
+                        When I'm not coding, I'm dancing! I currently teach Ballet 🩰 and is the Dance Captain of NUS Dance Synergy 💃🏻. My dedication and success in this art form is a testament to the sheer grit and determination I possess in pursuing my goals. And now, I aim to expand my knowledge and dedicate my time to data.
                     </p>
                 </div>
             </div>
