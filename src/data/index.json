@@ -75,7 +75,6 @@
         "icon": "./assets/nus.png",
         "date": "Aug 2023 - Present",
         "description": [
-          { "point": "Current GPA: 4.71" },
           { "point": "RAG committee 2024, achieved Computing's best performance." },
           { "point": "Dance Captain of NUS Dance Synergy." },
           { "point": "Key Modules: BT1101 Business Analytics, CS2030 'OOP', BT2102 Data Visualisation, BT4014 Analytics Driven Design of Adaptive Systems." }
