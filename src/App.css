@@ -130,6 +130,15 @@ code {
 
 }
 
+code2 {
+  font-size: 18px;
+  font-weight:400;
+  line-height: 0px;
+  letter-spacing: 0px; 
+  font-family: "Fira Code", monospace;
+
+}
+
 
 p {
   font-size: 18px;
@@ -531,7 +540,6 @@ p {
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
- 
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   border-top-left-radius: 20px;
@@ -608,37 +616,56 @@ p {
   transition: transform 0.3s ease, d 0.3s ease;
 }
 
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1200px) {
+  .portfolio--section--wrapper {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
   .portfolio--section {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .portfolio--section--container {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: center;
-    padding: 0.5rem; /* Reduce padding on the sides */
+    padding: 0.5rem;
   }
 
   .portfolio--section--card {
-    width: 400px; /* Ensure each card takes full width */
-    min-height: 680px; /* Maintain fixed height */
-    margin-bottom: 20px; /* Add space between stacked cards */
+    width: 350px;         /* smaller width for phones */
+    min-height: 620px;  /* smaller height */
+    margin-bottom: 20px;
   }
 
   .portfolio--section--img {
-    height: 250px; /* Maintain fixed height for image container */
+    height: 200px;
   }
 
   .portfolio--section--img > img {
-    width: auto; /* Maintain aspect ratio */
-    height: 100%; /* Keep image height within the container */
-    max-height: 250px; /* Ensure image doesn't exceed container height */
+    height: 100%;
+    max-height: 200px;
   }
 
   .portfolio--section--button-container {
-    justify-content: center; /* Center the button on smaller screens */
+    justify-content: center;
+  }
+
+  .scroll-arrow {
+    padding: 10px;
+    
+  }
+  .scroll-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .left-arrow {
+    left: 20px;
   }
 }
+
 
 /*
   .portfolio--section--button:hover .button-icon {
@@ -694,6 +721,57 @@ p {
     opacity: 1;
     transition: opacity 0.3s ease;
   }
+
+  .scroll-arrow {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0%;
+    z-index: 2;
+    transition: opacity 0.5s ease,  transform 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  transform: scale(1.05);
+}
+
+.left-arrow {
+    left: 40px;  /* Adjust as needed */
+}
+
+.right-arrow {
+    right: 40px;  /* Adjust as needed */
+}
+
+.scroll-arrow:disabled {
+    background-color: rgba(150, 150, 150, 0.6);
+    cursor: not-allowed;
+}
+
+.fade-slide-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.fade-slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease;
+}
+.fade-slide-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-slide-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 300ms ease;
+}
+
 
   /* project styler ends */
 
@@ -809,7 +887,7 @@ p {
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  border: 2px solid #9b9898;
+  border: 1.5px solid #9b9898aa;
   border-radius: 30px;
   box-sizing: border-box;
   background-color: transparent;
@@ -822,7 +900,7 @@ p {
 
 .submit-btn {
   padding: 14px 20px;
-  background-color: rgb(226, 221, 223);
+  background-color: rgba(247, 212, 225, 0.5); 
   color: black;
   font-size: 18px;
   border: none;
@@ -838,7 +916,7 @@ p {
 
 
 .submit-btn:hover {
-  background-color: #9b9898;
+  background-color: rgba(255, 255, 255, 0.5);
   transform: scale(1.05);
   transition: ease-in-out 0.2s;
 }

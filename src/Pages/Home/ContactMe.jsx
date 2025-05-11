@@ -130,7 +130,7 @@ export default function ContactMe() {
                         required
                     ></textarea>
                     <button type="submit" className={`submit-btn ${messageSent ? 'submitted' : ''} ${isSubmitting ? 'spinning' : ''}`}>
-                        {messageSent ? "Submitted!" : "Send Message"} <span className="carrot-icon">
+                        {messageSent ? "Submitted!" : <code2>Send Message</code2>} <span className="carrot-icon">
                             {messageSent ? <img src="./assets/happy.png" alt="Carrot Icon" /> : <img src="./assets/send.png" alt="Carrot Icon" /> }
                         </span>
                         {isSubmitting && <div className="loading-spinner"></div>} {/* Loading spinner */}

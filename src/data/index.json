@@ -38,6 +38,17 @@
           { "name": "pandas", "icon": "./assets/icons/pandas.png" },
           { "name": "SQL", "icon": "./assets/icons/sql.png"  },
           { "name": "Tableau", "icon": "./assets/icons/tab.png" }]
+      },
+      {
+        "id": "4",
+        "src": "./assets/match.png",
+        "title": "MatchUp",
+        "description": "MatchUp connects players to organize and join group sports activities like football, basketball, or badminton. Users can set preferences for skill level, location, and availability, making it easy to find the right teammates and build community through sports.",
+        "link": "https://bt3103-matchup.web.app/",
+        "techStack": [
+          { "name": "Vue.js", "icon": "./assets/icons/vue.png" },
+          { "name": "firebase", "icon": "./assets/icons/firebase.png" },
+          { "name": "CSS", "icon": "./assets/icons/CSS.png" }]
       }
     ],
     "contact": [
@@ -58,10 +69,22 @@
     "timeline": [
       {
         "id": "1",
+        "title": "AI/ML Intern",
+        "icon": "./assets/AI.png",
+        "place": "AI Singapore",
+        "date": "May 2025 - Aug 2025",
+        "description": [
+          { "point": "Went through a 3 week-long deep skilling phase." },
+          { "point": "Implemented AI into real world use cases." },
+          { "point": "Set up CI/CD pipelines & maintain proper version control using Github." }
+         ]
+      },
+      {
+        "id": "2",
         "title": "Python Teaching Assistant",
         "icon": "./assets/TA.png",
         "place": "NUS Computing",
-        "date": "Dec 2024 - Present",
+        "date": "Dec 2024 - Feb 2025",
         "description": [
           { "point": "Taught weekly 3 hour tutorials on Python programming to a class of 20 students." },
           { "point": "Graded and gave feedback on their work." },
@@ -69,7 +92,7 @@
          ]
       },
       {
-        "id": "2",
+        "id": "3",
         "title": "Year 2 Computing Student",
         "place": "National University of Singapore",
         "icon": "./assets/nus.png",
@@ -82,7 +105,7 @@
       },
 
       {
-        "id": "3",
+        "id": "4",
         "title": "HCI Graduate",
         "place": "Hwa Chong Instituition",
         "icon": "./assets/hci.png",
