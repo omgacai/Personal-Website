@@ -666,7 +666,6 @@ p {
   }
 }
 
-
 /*
   .portfolio--section--button:hover .button-icon {
     transform: translateY(-3px) translateX(2px); Shift icon to the right 
@@ -725,19 +724,20 @@ p {
   .scroll-arrow {
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #b1a3b4;
     color: white;
     border: none;
     padding: 12px 10px;
     cursor: pointer;
     font-size: 18px;
-    border-radius: 0%;
+    border-radius: 20%;
     z-index: 2;
     transition: opacity 0.5s ease,  transform 0.3s ease;
 }
 
 .scroll-arrow:hover {
   transform: scale(1.05);
+  background-color:  #dfc2d7;
 }
 
 .left-arrow {
@@ -749,7 +749,7 @@ p {
 }
 
 .scroll-arrow:disabled {
-    background-color: rgba(150, 150, 150, 0.6);
+    background-color: rgba(193, 191, 191, 0.6);
     cursor: not-allowed;
 }
 
@@ -771,8 +771,6 @@ p {
   transform: translateX(-20px);
   transition: all 300ms ease;
 }
-
-
   /* project styler ends */
 
   /* contact styler starts */
@@ -974,6 +972,29 @@ p {
   .contact--section {
     padding: 1em;
   }
+
+  .portfolio--section--wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .scroll-arrow {
+        position: static;
+        transform: none;
+        margin: 0 5px;
+    }
+
+    .scroll-arrow svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Optional: align buttons in a row */
+    .portfolio--section--button-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 
 .contact-footer-text {

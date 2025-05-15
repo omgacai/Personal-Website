@@ -69,14 +69,12 @@
     "timeline": [
       {
         "id": "1",
-        "title": "AI/ML Intern",
+        "title": "AI Internship Program",
         "icon": "./assets/AI.png",
         "place": "AI Singapore",
         "date": "May 2025 - Aug 2025",
         "description": [
-          { "point": "Went through a 3 week-long deep skilling phase." },
-          { "point": "Implemented AI into real world use cases." },
-          { "point": "Set up CI/CD pipelines & maintain proper version control using Github." }
+          { "point": "Work in progress..." }
          ]
       },
       {

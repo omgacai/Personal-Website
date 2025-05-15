@@ -59,16 +59,28 @@ export default function Projects() {
                 <hr className="section-line" />
             </div>
             <div className="portfolio--section--wrapper">
+                <div className="portfolio--section--button-row">
+                    <button 
+                        onClick={handlePrev} 
+                        disabled={currentPage === 0} 
+                        className="scroll-arrow left-arrow"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" width="24" height="24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
 
-            <button 
-                onClick={handlePrev} 
-                disabled={currentPage === 0} 
-                className="scroll-arrow left-arrow"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" width="24" height="24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                </svg>
-            </button>
+                    <button 
+                        onClick={handleNext} 
+                        disabled={currentPage === totalPages - 1} 
+                        className="scroll-arrow right-arrow"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" width="24" height="24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+
             <SwitchTransition mode="out-in">
                 <CSSTransition
                     key={currentPage}
@@ -134,17 +146,6 @@ export default function Projects() {
                     </div>
                 </CSSTransition>
             </SwitchTransition>     
-         
-            <button 
-                onClick={handleNext} 
-                disabled={currentPage === totalPages - 1} 
-                className="scroll-arrow right-arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" width="24" height="24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-
-
-            </button>
             </div>
         </section>
     );

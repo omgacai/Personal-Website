@@ -64,13 +64,22 @@ export default function AboutMe() {
                 </div>
                 <div className="about--section--desc">
                     <p>
-                        I am a Year 2 Business Analytics student from NUS specialising in Machine Learning. I enjoy all things data! The process of turning big data into meaningful insights brings me great sense of fulfilment! I look forward to further enhancing my skills and explore the endless possibilities of the world of data 🥳.
+                        As a dancer turned AI enthusiast, I believe storytelling 
+                        lies at the heart of both movement and artificial intelligence. 
+                        I’m passionate about finding rhythm and patterns—whether on stage 
+                        or within complex data and models 🩰🤖—to uncover the insights they reveal.
                     </p>
-                    <p>
-                        When I'm not coding, I'm dancing! I currently teach Ballet 🩰 and is the Dance Captain of NUS Dance Synergy 💃🏻. My dedication and success in this art form is a testament to the sheer grit and determination I possess in pursuing my goals. And now, I aim to expand my knowledge and dedicate my time to data.
+                    <p>              
+                        I enjoy working across the AI development lifecycle: from curating 
+                        and preparing data, to building, training, and deploying machine 
+                        learning models that deliver real-world impact. My goal is to translate 
+                        data into intelligent solutions that bridge the gap between raw information 
+                        and transformative outcomes. I am continually learning and eager to push 
+                        the boundaries of AI to solve meaningful, human-centered problems.
                     </p>
                 </div>
             </div>
         </section>
     );
 }
+
