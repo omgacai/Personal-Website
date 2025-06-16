@@ -95,7 +95,7 @@ export default function Projects() {
                                 </div>
                                 <div className="portfolio--section--card--content">
                                     <div>
-                                        <code className="portfolio--section--title">{item.title}</code>
+                                        <code className="portfolio--section--title" style={{ wordSpacing: '-10px' }}>{item.title}</code>
                                         <h5 className="text-md">{item.description}</h5>
                                     </div>
 

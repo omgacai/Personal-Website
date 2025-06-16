@@ -142,7 +142,7 @@ code2 {
 
 p {
   font-size: 18px;
-  line-height: 35px;
+  /*line-height: 35px;*/
   font-weight: 400;
   color: #000000;
   margin-bottom: 1em;
@@ -256,12 +256,12 @@ p {
 /* Media query for smaller screens */
 @media screen and (max-width: 1400px) {
   .hero-section {
-    padding: 2rem 1rem; /* Reduce padding on smaller screens */
+    padding: 4rem 1rem; /* Reduce padding on smaller screens */
   }
 
   .hero-img img {
     width: 80%; /* Adjust the width percentage */
-    max-width: 300px; /* Set a maximum width */
+    max-width: 280px; /* Set a maximum width */
     min-width: 250px; /* Set a minimum width */
   }
 
@@ -272,7 +272,8 @@ p {
 
   .btn-primary {
     font-size: 0.875rem; /* Adjust font size for smaller screens */
-    padding: 0.375rem 0.75rem; /* Adjust padding for smaller screens */
+    padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
+    margin-top: 0px;
   }
 
   .hero-bza{
@@ -284,7 +285,21 @@ p {
   }
 
   .hero-section-title {
-    font-size: 4rem;
+    margin-top:0px;
+    font-size: 60px;
+  }
+
+  .hero-bza {
+    font-size: 20px;
+  }
+
+  .title {
+    padding:0px;
+  }
+
+  .hero-data {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -446,6 +461,7 @@ p {
   background-color: rgba(255, 255, 255, 0.4); /* Translucent white */
   border-radius: 20px; /* Rounded corners */ 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  line-height: 30px !important;
 }
 
 
@@ -493,12 +509,12 @@ p {
 
 .portfolio--section--container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: nowrap;
   gap: 30px;
   width: 100%;
   padding-top: 10px;
-  align-items: stretch;
+  align-items: left;
 }
 
 .portfolio--section--card--content {
@@ -509,6 +525,7 @@ p {
 .portfolio--section--title {
   margin: 0px; /* Remove margin around the title */
   padding: 0px; /* Remove padding if any */
+  line-height: 30px;
 }
 
 .text-md {
@@ -618,7 +635,6 @@ p {
 
 @media screen and (max-width: 1200px) {
   .portfolio--section--wrapper {
-
     align-items: center;
     justify-content: center;
     display: flex;
@@ -634,9 +650,13 @@ p {
   }
 
   .portfolio--section--card {
-    width: 350px;         /* smaller width for phones */
-    min-height: 620px;  /* smaller height */
+    width: 320px;         /* smaller width for phones */
+    min-height: 640px;  /* smaller height */
     margin-bottom: 20px;
+  }
+
+  .portfolio--section--title {
+    font-size: 25px;
   }
 
   .portfolio--section--img {

@@ -17,6 +17,17 @@
       ,
       {
         "id": "2",
+        "src": "./assets/naisc.png",
+        "title": "2nd Prize - National AI Challenge",
+        "description": "We built an end-to-end ML pipeline for predictive maintenance using Halliburton’s dataset, followed by an analytical report. The report was integrated into a Retrieval-Augmented Generation (RAG) pipeline and deployed as a GenAI chatbot on DataRobot, enabling users to query our findings via natural language.",
+        "link": "https://docs.google.com/document/d/1RK3tdO4i6Aebud2fwgJp-kWc4746LXlb0E4YU5GVmok/edit?usp=sharing",
+        "techStack": [
+          { "name": "Azure", "icon": "./assets/icons/azure.png"  },
+          { "name": "OpenAI", "icon": "./assets/icons/openai.png" },
+          { "name": "Python", "icon": "./assets/icons/python.png" }]
+      },
+      {
+        "id": "3",
         "src": "./assets/placeholder-image-2.png",
         "title": "MovieRec",
         "description": "Conducted a comparative analysis of various contextual bandit algorithms to identify the most effective strategy on the movie dataset. Evaluated the algorithms using offline evaluation and bootstrapping to artificially increase sample size.",
@@ -28,7 +39,7 @@
           { "name": "scikit-learn", "icon": "./assets/icons/sci.png" }]
       },
       {
-        "id": "3",
+        "id": "4",
         "src": "./assets/placeholder-image-1.png",
         "title": "Beijing Market",
         "description": "Generated data visualisations to conclude if one should enter the Beijing Property Market. Created complex geospatial visualizations (choropleth maps) and demand-supply heatmaps to uncover market trends and regional disparities.",
@@ -40,7 +51,7 @@
           { "name": "Tableau", "icon": "./assets/icons/tab.png" }]
       },
       {
-        "id": "4",
+        "id": "5",
         "src": "./assets/match.png",
         "title": "MatchUp",
         "description": "MatchUp connects players to organize and join group sports activities like football, basketball, or badminton. Users can set preferences for skill level, location, and availability, making it easy to find the right teammates and build community through sports.",
@@ -74,7 +85,9 @@
         "place": "AI Singapore",
         "date": "May 2025 - Aug 2025",
         "description": [
-          { "point": "Work in progress..." }
+          { "point": "Researched SOTA document parsing and evaluation techniques in NLP and layout analysis." },
+          { "point": "Built and deployed an end-to-end evaluation pipeline with advanced performance metrics." },
+          { "point": "Completed deep-skilling in NLP, PyTorch, and LLMs; developed a RAG-based chatbot using Haystack and Hugging Face." }
          ]
       },
       {
@@ -89,21 +102,9 @@
           { "point": "Maintained a positive learning environment and close relationships with my students." }
          ]
       },
-      {
-        "id": "3",
-        "title": "Year 2 Computing Student",
-        "place": "National University of Singapore",
-        "icon": "./assets/nus.png",
-        "date": "Aug 2023 - Present",
-        "description": [
-          { "point": "RAG committee 2024, achieved Computing's best performance." },
-          { "point": "Dance Captain of NUS Dance Synergy." },
-          { "point": "Key Modules: BT1101 Business Analytics, CS2030 'OOP', BT2102 Data Visualisation, BT4014 Analytics Driven Design of Adaptive Systems." }
-         ]
-      },
 
       {
-        "id": "4",
+        "id": "3",
         "title": "HCI Graduate",
         "place": "Hwa Chong Instituition",
         "icon": "./assets/hci.png",

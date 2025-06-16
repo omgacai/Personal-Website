@@ -140,7 +140,7 @@ export default function ContactMe() {
 
             <div className="contact-footer">
                 <hr className="contact-footer-line"></hr>
-                <code className="contact-footer-text">Last updated: 13 May 2025</code>
+                <code className="contact-footer-text">Last updated: 16 June 2025</code>
 
             </div>
         </section>
