@@ -80,6 +80,31 @@
     "timeline": [
       {
         "id": "1",
+        "title": "Forward Deployed Engineer Intern",
+        "icon": "./assets/gic.jpg",
+        "place": "GIC Private Limited",
+        "date": "May 2026 - present",
+        "description": [
+          { "point": "Building AI agent deployment systems and using workflow automation tools." },
+          { "point": "Leveraging tools such as Temporal and Redis Pub/Sub for scalable orchestration and inter-service communication." }
+
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Algorithm Engineer Intern",
+        "icon": "./assets/shopee.png",
+        "place": "Shopee",
+        "date": "Jan 2026 - Apr 2026",
+        "description": [
+          { "point": "Fine-tuned pretrained vision transformer backbone for image classification tasks." },
+          { "point": "Explored parameter efficient fine tuning methods e.g LoRA" },
+          { "point": "Conducted systematic ablation studies on optimisation hyperparameters, to analyse impact on accuracy and convergence behaviour." },
+          { "point": "Robustness training to defend against adversarial attacks and real-world image augmentations." }
+         ]
+      },
+      {
+        "id": "3",
         "title": "AI Internship Program",
         "icon": "./assets/AI.png",
         "place": "AI Singapore",
@@ -91,7 +116,7 @@
          ]
       },
       {
-        "id": "2",
+        "id": "4",
         "title": "Python Teaching Assistant",
         "icon": "./assets/TA.png",
         "place": "NUS Computing",
@@ -104,7 +129,7 @@
       },
 
       {
-        "id": "3",
+        "id": "5",
         "title": "HCI Graduate",
         "place": "Hwa Chong Instituition",
         "icon": "./assets/hci.png",
